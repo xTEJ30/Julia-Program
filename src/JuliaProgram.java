@@ -2,14 +2,12 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.image.BufferedImage;
-import java.text.*;
-import java.util.*;
 import javax.imageio.ImageIO;
 import javax.swing.filechooser.FileFilter;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.io.*;
 
-public class Main extends JPanel implements AdjustmentListener,ActionListener{
+public class JuliaProgram extends JPanel implements AdjustmentListener,ActionListener{
 
     JFrame frame;
     JFileChooser fileChooser;
@@ -38,7 +36,7 @@ public class Main extends JPanel implements AdjustmentListener,ActionListener{
 
 
 
-    public Main(){
+    public JuliaProgram(){
         frame = new JFrame("JuliaProgram");
 
         //orientation, initial value, ?, begin, end)
@@ -302,6 +300,6 @@ public class Main extends JPanel implements AdjustmentListener,ActionListener{
 
 
     public static void main(String[]args){
-        Main app = new Main();
+        JuliaProgram app = new JuliaProgram();
     }
 }
